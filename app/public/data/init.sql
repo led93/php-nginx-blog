@@ -3,12 +3,12 @@
  */
 DROP TABLE IF EXISTS post;
 CREATE TABLE post (
-    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    title VARCHAR NOT NULL,
-    body VARCHAR NOT NULL,
+    id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    body VARCHAR(255) NOT NULL,
     user_id INTEGER NOT NULL,
-    created_at VARCHAR NOT NULL,
-    updated_at VARCHAR
+    created_at VARCHAR(255) NOT NULL,
+    updated_at VARCHAR(255)
 );
 INSERT INTO
     post
@@ -20,7 +20,7 @@ INSERT INTO
         "This is the body of the first post.
 It is split into paragraphs.",
         1,
-        date('now', '-2 months')
+        NOW()
     )
 ;
 INSERT INTO
@@ -33,7 +33,7 @@ INSERT INTO
         "This is the body of the second post.
 This is another paragraph.",
         1,
-        date('now', '-40 days')
+        NOW()
     )
 ;
 INSERT INTO
@@ -46,6 +46,6 @@ INSERT INTO
         "This is the body of the third post.
 This is split into paragraphs.",
         1,
-        date('now', '-13 days')
+        NOW()
     )
 ;
