@@ -1,7 +1,7 @@
 This is a startup development template for PHP projects.
 It comes with:
 - Docker
-- Mysql (MariaDB)
+- MariaDB)
 - Nginx
 - Php (fpm latest)
 
